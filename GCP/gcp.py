@@ -36,7 +36,7 @@ class LaboratoryTest(Base):
     test_name = Column(String(100), nullable=False)
     test_date = Column(Date, nullable=False)
     test_result = Column(String(100), nullable=False)
-
+    suika_score = Column(Integer)
     patient = relationship('Patient', back_populates='laboratory')
 
 ### Part 2 - initial sqlalchemy-engine to connect to db:
